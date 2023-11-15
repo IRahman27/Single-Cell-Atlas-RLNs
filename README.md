@@ -11,12 +11,20 @@ The findings underscore the significance of the RLN atlas as a pertinent 'normal
 The atlas offers opportunities to refine B-cell subtypes, delve into T-cell subsets, and expand its scope by incorporating additional RLN samples. These endeavours would enhance the atlas's depth and applicability. In conclusion, this study has the potential to contribute to our understanding of immune cell dynamics and their roles in health and disease, offering a promising avenue for future research in the realm of immune-related disorders, such as follicular lymphoma.
 
 ## Code Implementation
+Folders and Content: 
+
 `1 - Data Loading`: Loading data from each study and creating Seurat Objects for each sample
+
 `2 - DoubletFinder`: Running the DoubletFinder pipeline on each sample
+
 `3 - Scrublet`: Running the Scrublet pipeline on each sample
+
 `4 - QC and Processing`: Merging samples and pre-processing as a single object using the Seurat pipeline
+
 `5 - Integration`: Integrating data from the different samples using Harmony
+
 `6- Cluster Identification`: Manual cell annotation and automated cell annotation using SingleR
+
 `7 - B-Cell Subset`: Subsetting RLN object to identify specific B-Cell populations and compare to existing Tonsil atlas
 
 
