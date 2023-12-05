@@ -146,20 +146,10 @@ RLN <- CellCycleScoring(RLN, s.features = s.genes, g2m.features = g2m.genes, ass
 
 RLN <- SCTransform(RLN, vst.flavor = "v2",  assay = 'RNA', new.assay.name = 'SCT', vars.to.regress = c("percent.mt", "S.Score", "G2M.Score"), verbose = FALSE) 
 
-
-# Adjust Variable Features
-# Remove unwanted genes 
-
-# - IGHV|IGKV|IGLV … removes B cell receptor (BCR) immunogloublin (Ig) heavy chain (H) and light chain (K/L) variable genes from HVGs
-
-# - TRAV|TRBV|TRDV|TRGV … removes T cell receptor (TCR) variable genes (for alpha/beta/delta/gamma TCRs) from HVGs
-
-# - MT-|MTRN … So cells don’t cluster by mitochondrial content (not usually biologically relevant)
-
-
 # What are my top 10 highly variable features initially?
 RLN@assays$SCT
 
+# Adjust Variable Features
 var.feat <- VariableFeatures(RLN)
 new.var.feat <- var.feat[grep("^IGHV|^IGKV|^IGLV|^TRAV|^TRBV|^TRDV|^TRGV|^MT-|^MTRN", var.feat, invert = TRUE)]
 VariableFeatures(RLN) <- new.var.feat
