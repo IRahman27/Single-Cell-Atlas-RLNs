@@ -8,7 +8,7 @@ The study successfully developed a comprehensive single-cell atlas of adult RLNs
 
 The findings underscore the significance of the RLN atlas as a pertinent 'normal' reference for FL investigations. This alignment provides a solid foundation for advancing research on immune cell diversity, interactions, and functional roles within the context of both normal immune responses and disease pathogenesis. However, the study also highlights the challenges associated with constructing a robust single-cell atlas, primarily stemming from the absence of standardised analytical approaches.
 
-The atlas offers opportunities to refine B-cell subtypes, delve into T-cell subsets, and expand its scope by incorporating additional RLN samples. These endeavours would enhance the atlas's depth and applicability. In conclusion, this study has the potential to contribute to our understanding of immune cell dynamics and their roles in health and disease, offering a promising avenue for future research in the realm of immune-related disorders, such as follicular lymphoma.
+The atlas offers opportunities to refine B-cell subtypes, delve into T-cell subsets, and expand its scope by incorporating additional RLN samples. These endeavours would enhance the atlas's depth and applicability. In conclusion, this study has the potential to contribute to our understanding of immune cell dynamics and their roles in health and disease, offering a promising avenue for future research in the realm of immune-related disorders, such as FL.
 
 ## Code Implementation
 Folders and Content: 
